@@ -1,13 +1,27 @@
-this is my first line;
-now begin my second line;
-forth;
-third;
 
-now i have handled the bug issue-001;
 
-i am tom;
-i am mike;
-hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
-now
-handle a bug;
+
+
+
+8-分支管理
+    8.1-创建与合并分支
+	查看分支：git branch
+	创建分支：git branch <name>
+	切换分支：git checkout <name>
+	创建+切换分支：git checkout -b <name>
+	合并某分支到当前分支：git merge <name>
+	删除分支：git branch -d <name>
+    8.2-解决冲突
+    8.3-
+9-标签
+    9.1-创建标
+	命令git tag <name>用于新建一个标签，默认为HEAD，也可以指定一个commit id；
+	   git tag -a <tagname> -m "blablabla..."可以指定标签信息；
+	   git tag -s <tagname> -m "blablabla..."可以用PGP签名标签；
+	命令git tag可以查看所有标签。
+    9.2-操作标签
+	命令git push origin <tagname>可以推送一个本地标签；
+	命令git push origin --tags可以推送全部未推送过的本地标签；
+	命令git tag -d <tagname>可以删除一个本地标签；
+	命令git push origin :refs/tags/<tagname>可以删除一个远程标签。
 
